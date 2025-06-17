@@ -1,14 +1,13 @@
 #include <stdio.h>
 
-// Definindo uma struct para representar uma carta
 struct Carta {
-    char estado;                  // Letra do estado (A-H)
-    char codigo[4];               // Código da carta (ex: A01)
-    char nomeCidade[50];          // Nome da cidade
-    int populacao;                // População
-    float area;                   // Área em km²
-    float pib;                    // PIB
-    int pontosTuristicos;         // Número de pontos turísticos
+    char estado;                  
+    char codigo[4];               
+    char nomeCidade[50];          
+    int populacao;                
+    float area;                   
+    float pib;                   
+    int pontosTuristicos;        
 };
 
 int main() {
@@ -16,14 +15,12 @@ int main() {
 
     printf("=== Cadastro da Carta 1 ===\n");
     printf("Estado (A-H): ");
-    scanf(" %c", &carta1.estado);  // Espaço antes do %c para consumir \n anterior
-
+    scanf(" %c", &carta1.estado);  
     printf("Código da carta (ex: A01): ");
     scanf("%s", carta1.codigo);
 
     printf("Nome da cidade: ");
-    scanf(" %[^\n]", carta1.nomeCidade);  // Lê até a quebra de linha
-
+    scanf(" %[^\n]", carta1.nomeCidade);  
     printf("População: ");
     scanf("%d", &carta1.populacao);
 
